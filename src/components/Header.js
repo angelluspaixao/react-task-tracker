@@ -20,7 +20,9 @@ Header.defaultProps = {
 }
 
 Header.propTypes = {
-    title: PropTypes.string
+    title: PropTypes.string,
+    onAdd: PropTypes.func,
+    showAdd: PropTypes.bool.isRequired
 }
 
 export default Header
