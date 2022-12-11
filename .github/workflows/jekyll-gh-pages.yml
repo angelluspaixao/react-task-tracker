@@ -48,3 +48,39 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+# name: deploy
+
+# on:
+#   push:
+#     branches: ["main"]
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
+#       - name: Setup Node.js
+#       - uses: actions/setup-node@v1
+#         with:
+#           node-version: '14.x'
+#       - name: Build with Jekyll
+#         uses: actions/jekyll-build-pages@v1
+#         with:
+#           source: ./
+#           destination: ./_site
+#       - name: Upload artifact
+#         uses: actions/upload-pages-artifact@v1
+
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Build web-app
+#         run: |
+#           npm ci
+#           npm run build
+#       - name: Deploy to gh-pages
+#         uses: peaceiris/actions-gh-pages@v3
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_dir: ./build
