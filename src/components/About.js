@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 const About = () => {
   return (
     <div>
-      <h4>Version 1.0.0</h4>
-      <Link to='..' relative="/">Go back</Link>
+      <h4>Version 0.3.0</h4>
+      <Link to='/react-task-tracker'>Go back</Link>
     </div>
   )
 }
