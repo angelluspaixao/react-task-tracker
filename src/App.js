@@ -82,7 +82,7 @@ const toggleReminder = async (id) => {
       <div className="container">
         <Header onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask} />
         <Routes>
-          <Route path='/react-task-tracker' element={
+          <Route path='/react-task-tracker/' element={
             <>
               {showAddTask && <AddTask onAdd={addTask} />}
               {tasks.length > 0 ? 
@@ -91,7 +91,7 @@ const toggleReminder = async (id) => {
               }
             </>
           } />
-          <Route path='/react-task-tracker/about' element={<About />} />
+          <Route path='/react-task-tracker/about/' element={<About />} />
         </Routes>
         <Footer />
       </div>
