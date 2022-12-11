@@ -84,11 +84,9 @@ const toggleReminder = async (id) => {
         <Routes>
           <Route path='/react-task-tracker/' element={
             <>
+              {/* TO-DO: implement AddTask logic WHITHIN it */}
               {showAddTask && <AddTask onAdd={addTask} />}
-              {tasks.length > 0 ? 
-                <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
-                : 'No tasks to-do!'
-              }
+              <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
             </>
           } />
           <Route path='/react-task-tracker/about/' element={<About />} />
