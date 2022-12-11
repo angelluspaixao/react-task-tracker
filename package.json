@@ -1,7 +1,7 @@
 {
   "name": "react-task-tracker",
   "version": "0.2.0",
-  "homepage": "https://angelluspaixao.github.io/react-task-tracker/",
+  "homepage": "https://angelluspaixao.github.io/react-task-tracker",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
